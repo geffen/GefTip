@@ -1,4 +1,4 @@
 # GefTip
 CodePath initial project/homework
 
-![tumblr gif](tumblr readme.gif)
+![Example Gif](readme.gif)
