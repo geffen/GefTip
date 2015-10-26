@@ -26,11 +26,11 @@ class ViewController: UIViewController {
 
     @IBAction func billChange(sender: AnyObject) {
         var tipPercentages = [0.18,0.2,0.22]
-        var tipChosen = tipPercentages[tipChoice.selectedSegmentIndex]
+        let tipChosen = tipPercentages[tipChoice.selectedSegmentIndex]
         
-        var billAmount = NSString(string:billField.text!).doubleValue
-        var tip = billAmount * tipChosen
-        var total = billAmount + tipChosen
+        let billAmount = NSString(string:billField.text!).doubleValue
+        let tip = billAmount * tipChosen
+        let total = billAmount + tip
         
         tipLabel.text = "$\(tip)"
         totalLabel.text = "$\(total)"
